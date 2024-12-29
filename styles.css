@@ -1,0 +1,198 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('photo_2024-12-29_17-18-53.jpg');  /* Path to your image */
+  background-size: cover;  /* Ensure the image covers the whole screen */
+  background-position: center center;  /* Center the image */
+  background-attachment: fixed;  /* Make the background fixed while scrolling */
+  background-repeat: no-repeat;  /* Prevent the image from repeating */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #125c2a;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #ff6f61;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  text-align: center;
+}
+
+.memory-img {
+  max-width: 80%; /* Adjusted for responsive resizing */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.song-link {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff6f61;  /* Your favorite color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.song-link:hover {
+  background-color: #e45c4e;  /* Darker shade on hover */
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.6rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  .container {
+    padding: 25px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .memory-img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .memory-img {
+    max-width: 90%;  /* Allow the image to scale with smaller screen sizes */
+  }
+
+  nav ul {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .song-link {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .memory-img {
+    max-width: 100%;  /* Image will be fully responsive on very small screens */
+  }
+
+  footer {
+    font-size: 1.4rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+}
